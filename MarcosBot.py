@@ -295,7 +295,7 @@ class MarcosBot:
                 symbols[word] = None
 
         if len(symbols) > len(conversation.someones):
-            return "No enough someones"
+            return "No enough someones".split()
 
         generated_names = conversation.get_someone(len(symbols))
 
